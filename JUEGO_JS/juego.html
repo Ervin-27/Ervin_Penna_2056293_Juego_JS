@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina quien soy</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+    <h1> Adivina quien soy? </h1>
+    <div class="contenedorPuntaje">
+    <p id="puntaje"></p>
+</div>
+    <div class="contenedorResultado">
+    <img id="imgResultado" class="imgResultado" src="" alt="">
+</div><br><br>
+    <div class="contenedorImg">
+        <img id="imgPersonaje" class="imgPersonaje" src="" alt="">
+    </div><br><br>
+    <div class="contenedorBoton">
+        <button id="playJuego" class="boton"> Jugar </button>&nbsp;&nbsp;
+        <button id="Siguiente" class="boton" value="disabled"> Siguiente </button>
+    </div>
+    <div class="contenedorPreguntas">
+        <div class="pregunta">
+            <div class="divPregunta"> <input type="text" placeholder="" value="" size="50" id="pregunta0"  readonly="true"> </div>
+            <div class="divRespuesta"> <select id="respuesta0">
+                    <option value=""> Escoja Respuesta </option>
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="divIco"> <img id="icoRta0" class="icoRta" src="" alt=""></div>
+        </div>
+
+        <div class="pregunta">
+            <div class="divPregunta"> <input type="text" placeholder="" value="" size="50" id="pregunta1" readonly="true"> </div>
+            <div class="divRespuesta"> <select id="respuesta1">
+                    <option value=""> Escoja Respuesta </option>
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="divIco"> <img id="icoRta1" class="icoRta" src="" alt=""></div>
+        </div>
+
+        <div class="pregunta">
+            <div class="divPregunta"> <input type="text" placeholder="" value="" size="50" id="pregunta2"  readonly="true"> </div>
+            <div class="divRespuesta"> <select id="respuesta2">
+                    <option value=""> Escoja Respuesta </option>
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="divIco"> <img id="icoRta2" class="icoRta" src="" alt=""></div>
+        </div>
+
+        <div class="pregunta">
+            <div class="divPregunta"> <input type="text" placeholder="" value="" size="50" id="pregunta3"  readonly="true"> </div>
+            <div class="divRespuesta"> <select id="respuesta3">
+                    <option value=""> Escoja Respuesta </option>
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="divIco"> <img id="icoRta3" class="icoRta" src="" alt=""></div>
+        </div>
+
+        <div class="pregunta">
+            <div class="divPregunta"> <input type="text" placeholder="" value="" size="50" id="pregunta4"  readonly="true"> </div>
+            <div class="divRespuesta"> <select id="respuesta4">
+                    <option value=""> Escoja Respuesta </option>
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="divIco"> <img id="icoRta4" class="icoRta" src="" alt=""></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="contenedorPreguntas">
+        <div class="pregunta">
+            <div class="divPregunta"> <input id="respuetaGeneral" type="text" placeholder=" aqui su respuesta"
+                    size="50" onkeyup="javascript:this.value=this.value.toUpperCase();"> </div>
+            <div class="divRespuesta" id="btnRespuesta"> <button> Responder </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/juegoLogic.js"></script>
+</body>
+
+</html>
